@@ -1,0 +1,97 @@
+/* Background hacking style */
+.dashboard-wrapper {
+  position: relative;
+  min-height: 100vh;
+  background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c424bbb0-a0e6-4a95-b422-56f707c6e172/dh2zzbe-1a32aad7-3ca9-4e04-8c2e-0ad842b26867.jpg/v1/fill/w_1280,h_854,q_75,strp/a_pop_art_of_glittery_carbonated_rain_no_4__hd_wal_by_gabimedia_dh2zzbe-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M0MjRiYmIwLWEwZTYtNGE5NS1iNDIyLTU2ZjcwN2M2ZTE3MlwvZGgyenpiZS0xYTMyYWFkNy0zY2E5LTRlMDQtOGMyZS0wYWQ4NDJiMjY4NjcuanBnIiwiaGVpZ2h0IjoiPD04NTQiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9jNDI0YmJiMC1hMGU2LTRhOTUtYjQyMi01NmY3MDdjNmUxNzJcL2dhYmltZWRpYS00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.-X4BX5R2IjWthWMcZ5kW5X1jLB6n2a2vTljrciU-szU") no-repeat center center fixed;
+  background-size: cover;
+  color: #00ff9d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", monospace;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.8);
+  z-index: 1;
+}
+
+.dashboard-content {
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  width: 90%;
+}
+
+.hacker-heading {
+  font-size: 42px;
+  text-shadow: 0 0 20px #00ff9d, 0 0 40px #00ff9d;
+  margin-bottom: 10px;
+}
+
+.hacker-sub {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #b0ffce;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Card widget */
+.card-widget {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #00ff9d;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 15px #00ff9d;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-widget:hover {
+  transform: scale(1.05);
+}
+
+.card-widget h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #00ff9d;
+}
+
+.count {
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.progress-bar {
+  background: rgba(255, 255, 255, 0.1);
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress {
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+.percent {
+  font-size: 14px;
+  color: #b0ffce;
+}
+
+.clickable {
+  cursor: pointer;
+}

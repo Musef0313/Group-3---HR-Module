@@ -1,0 +1,187 @@
+/* ----------------------------------------------------
+   GLOBAL / BASE STYLES
+---------------------------------------------------- */
+body {
+  background: linear-gradient(135deg, #e8f0ff, #ffffff);
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Main Container */
+.attendance-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  animation: fadeSlideUp 0.4s ease;
+}
+
+/* Title */
+.attendance-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0046c7;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+
+/* ----------------------------------------------------
+   INPUT FIELDS
+---------------------------------------------------- */
+.attendance-container input,
+.attendance-container select {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1.8px solid #bfc7d7;
+  margin-bottom: 20px;
+  font-size: 16px;
+  transition: 0.25s;
+  background: #f7f9ff;
+}
+
+.attendance-container input:focus,
+.attendance-container select:focus {
+  border-color: #0066ff;
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 102, 255, 0.4);
+}
+
+/* Labels */
+.input-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+/* ----------------------------------------------------
+   BUTTONS
+---------------------------------------------------- */
+.attendance-container button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(45deg, #0050ff, #00a2ff);
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 28px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.attendance-container button:hover {
+  opacity: 0.92;
+  transform: translateY(-3px);
+}
+
+/* ----------------------------------------------------
+   EMPLOYEE INFO CARD
+---------------------------------------------------- */
+.employee-card {
+  background: linear-gradient(135deg, #f0f5ff, #ffffff);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 6px solid #0066ff;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  animation: fadeIn 0.4s ease;
+}
+
+.employee-card p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* ----------------------------------------------------
+   TABLE WRAPPER
+---------------------------------------------------- */
+.table-wrapper {
+  margin-top: 25px;
+  overflow-x: auto;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.10);
+}
+
+/* ----------------------------------------------------
+   TABLE
+---------------------------------------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+table thead {
+  background: #0066ff;
+  color: white;
+}
+
+table thead th {
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+table th,
+table td {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+  font-size: 15px;
+  color: #333;
+}
+
+table tbody tr:nth-child(even) {
+  background: #f2f6ff;
+}
+
+table tbody tr:hover {
+  background: #e3edff;
+  transition: 0.25s;
+}
+
+table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ----------------------------------------------------
+   ANIMATIONS
+---------------------------------------------------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ----------------------------------------------------
+   RESPONSIVE
+---------------------------------------------------- */
+@media (max-width: 600px) {
+  .attendance-container {
+    padding: 22px;
+  }
+
+  table th,
+  table td {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}

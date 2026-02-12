@@ -1,0 +1,72 @@
+/* Delete button hover effect */
+.delete-btn:hover {
+  background-color: #dc3545 !important; /* btn-danger red */
+  border-color: #dc3545 !important;
+  color: white !important;
+}
+.leave-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.leave-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.leave-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.leave-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: url("https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.leave-table th,
+.leave-table td {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.leave-table th {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn {
+  margin: 3px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3 !important;
+}
+
+.btn-danger:hover {
+  background-color: #c82333 !important;
+}

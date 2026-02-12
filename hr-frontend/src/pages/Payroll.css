@@ -1,0 +1,41 @@
+.payroll-dashboard {
+  min-height: 100vh;
+  background: url('https://images.unsplash.com/photo-1556742400-b5d3b5c2f18e?auto=format&fit=crop&w=1950&q=80') no-repeat center center;
+  background-size: cover;
+  padding-top: 20px;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.info-card {
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: scale(1.05);
+}
+
+.payroll-form input {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.payroll-form button {
+  border-radius: 8px;
+}
+
+.payroll-table-card {
+  overflow-x: auto;
+  background: rgba(255,255,255,0.95);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f0f0f0;
+}

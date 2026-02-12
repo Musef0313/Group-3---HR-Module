@@ -1,0 +1,136 @@
+.leave-container {
+  position: relative;
+  min-height: 100vh;
+  background: url("https://wallpapers.com/images/featured/hd-nature-ngdfb9h966h4z3le.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  padding: 30px;
+  font-family: "Segoe UI", sans-serif;
+  color: #d0d0d0;
+}
+
+.leave-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+.heading {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.leave-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: rgba(20, 20, 20, 0.75);
+  border: 1px solid rgba(0, 255, 157, 0.4);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.leave-form label {
+  color: #cfcfcf;
+  font-weight: 500;
+}
+
+.leave-form input {
+  flex: 1 1 200px;
+  padding: 10px;
+  background: #1b1b1b;
+  border: 1px solid #00ff9d;
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+.leave-form input::placeholder {
+  color: #9a9a9a;
+}
+
+.leave-form input:focus {
+  outline: none;
+  box-shadow: 0 0 6px #00ff9d;
+}
+
+.leave-form .btn-primary {
+  background: #00ff9d;
+  border: none;
+  font-weight: bold;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.error-message {
+  color: #d9534f;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.leave-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(15, 15, 15, 0.8);
+  color: #f1f1f1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.leave-table th,
+.leave-table td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.leave-table th {
+  background: rgba(0, 255, 157, 0.15);
+  color: #ffffff;
+}
+
+.leave-table tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.status-badge.pending {
+  background: rgba(255, 193, 7, 0.2);
+  color: #ffc107;
+}
+
+.status-badge.approved {
+  background: rgba(40, 167, 69, 0.2);
+  color: #28a745;
+}
+
+.status-badge.rejected {
+  background: rgba(220, 53, 69, 0.2);
+  color: #dc3545;
+}
+
+.btn-success {
+  background: #00ff9d;
+  border: none;
+  font-weight: bold;
+  color: black;
+}
+
+.btn-danger {
+  background: #ff4d4d;
+  border: none;
+  font-weight: bold;
+  color: white;
+}
